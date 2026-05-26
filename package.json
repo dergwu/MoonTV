@@ -2,6 +2,7 @@
   "name": "moontv",
   "version": "0.1.0",
   "private": true,
+  "description": "A personal media collection manager",
   "scripts": {
     "dev": "pnpm gen:runtime && pnpm gen:manifest && next dev -H 0.0.0.0",
     "build": "pnpm gen:runtime && pnpm gen:manifest && next build",
@@ -80,11 +81,11 @@
     "typescript": "^4.9.5"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
+    "*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings=0",
       "prettier -w"
     ],
-    "**/*.{json,css,scss,md,webmanifest}": [
+    "*.{json,css,scss,md,webmanifest}": [
       "prettier -w"
     ]
   },
